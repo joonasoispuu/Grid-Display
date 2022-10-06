@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.grid-container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.small_box{
+    background-color: aqua;
+}
+
+header, .small_box, .sidebar, .main_content, footer{
+    background: slateblue;
+    color: snow;
+}
+
+header, footer{
+    grid-column: span 4;
+    height: 20vh;
+}
+
+.main_content{
+    grid-column: span 3;
+    height: 35vh;
+}
+
+.sidebar{
+    grid-row: span 2;
+}
+
+.small_box{
+    height: 15vh;
+}
